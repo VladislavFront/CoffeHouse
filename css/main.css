@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  /* border: 3px solid red; */
+}
+
+.brownBg {
+  background-color: #130C00;
+}
+
+.grayBg {
+  background-color: #2B2828;
+}
+
+.home-section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/homeBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub-container {
+  width: 50%;
+}
+
+.content-container-home {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* border: 3px solid red; */
+  color: darkgray;
+}
+
+.text-container-home {
+  text-align: end;
+  margin-right: 50px;
+  /* border: 3px solid red; */
+}
+
+.homeTitle {
+  font-size: 80px;
+  color: #E9BEA5;
+  text-transform: uppercase;
+}
+
+.homeSubTitle {
+  font-size: 50px;
+  color: #BE815F;
+  text-transform: uppercase;
+}
+
+.aboutTextHome {
+  font-size: 19px;
+}
+
+.btn-home-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-home {
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+  background-color: #BE815F;
+  border: none;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 20px;
+  transition: all .5s;
+}
+
+.btn-home:hover {
+  color: black;
+}
+
+.aboutSection {
+  height: 85%;
+}
+
+.content-container-about {
+  /* border: 3px solid red; */
+  height: 100%;
+  width: 100%;
+  padding: 100px;
+}
+
+.about-container {
+  /* border: 3px solid green; */
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.card-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 20px;
+  color: rgb(194, 194, 194);;
+  /* border: 3px solid blue; */
+}
+
+.aboutText-card-container-media {
+  display: none;
+}
+
+.cardTitle {
+  font-size: 60px;
+  color: #E9BEA5;
+  margin-bottom: 30px;
+}
+
+.aboutImg {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.aboutImg1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.aboutImg2 {
+  height: 100%;
+}
+
+.menuSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuTitle {
+  font-size: 80px;
+  color: #E9BEA5;
+  margin-bottom: 30px;
+}
+
+.menuSwiper {
+  width: 90%;
+}
+
+.sliderItem {
+  border-radius: 25px;
+  max-width: 100%;
+}
+
+.navigation-swiper-container {
+  width: 91%;
+  margin: 20px 0 20px 0;
+}
+
+.swiperNavigationBtn {
+  width: 100px;
+  background-color: #BE815F;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.swiperPrevtImg {
+  transform: rotateY(180deg);
+}
+
+.actionSection {
+  height: 90%;
+}
+
+.content-container-action {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-container {
+  /* border: 3px solid red; */
+  width: 90%;
+  height: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+.actionImg {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.action-info-container {
+  margin-left: 50px;
+  /* border: 3px solid red; */
+}
+
+.actionTitle {
+  font-size: 80px;
+  color: #E9BEA5;
+  margin-bottom: 30px;
+}
+
+.actionList {
+  font-size: 20px;
+  color: rgb(194, 194, 194);
+  list-style: none;
+}
+
+.actionListItem {
+  margin-bottom: 20px;
+}
+
+.btn-action {
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+  background-color: #BE815F;
+  border: none;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 20px;
+  transition: all .5s;
+}
+
+.btn-action:hover {
+  color: black;
+}
+
+.btn-action-container {
+  height: 100%;
+}
+
+.gallerySection {
+  display: flex;
+  justify-content: center;
+}
+
+.galleryTitle {
+  font-size: 80px;
+  color: #E9BEA5;
+  margin: 30px 0 30px 0;
+}
+
+.content-container-gallery {
+  width: 90%;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 5vw);
+  grid-gap: 15px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.gallery-item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+ 
+.gallery-item2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+ 
+.gallery-item3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+ 
+.gallery-item4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+ 
+.gallery-item5 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+
+.reviewsSection {
+  /* display: flex;
+  justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+ 
+.content-container-reviews {
+  width: 90%;
+}
+
+.reviewsTitle {
+  font-size: 80px;
+  color: #E9BEA5;
+  margin-bottom: 30px;
+} 
+
+.swiper-slide-textContainer {
+  /* border: 3px solid red; */
+  width: 100px;
+  height: 200px;
+  font-size: 17px;
+  color: rgb(175, 175, 175);
+  background-color: #2B2828;
+  text-align: left;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.navigation-swiper-container-reviews {
+  margin: 20px 0 20px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formTitle {
+  font-size: 80px;
+  color: #E9BEA5;
+  margin: 30px 0 30px 0;
+  text-align: center;
+} 
+
+.form {
+  /* border: 3px solid red; */
+  margin: 20px;
+}
+
+.input-container {
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  height: 50px;
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+}
+
+.formReset {
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+  background-color: #BE815F;
+  border: none;
+  padding: 15px;
+  margin: 20px 0 50px 20px;
+  border-radius: 20px;
+  transition: all .5s;
+}
+
+.formItem {
+  margin: 20px 0 10px 0;
+  border-radius: 10px;
+  border: 5px solid #BE815F;
+}
+
+.formItem:focus {
+  outline: none;
+}
+
+.formReset:hover {
+  color: black;
+}
